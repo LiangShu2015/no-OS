@@ -143,8 +143,8 @@
 #define TX_DMA_BASEADDR			XPAR_AXI_AD9371_TX_DMA_BASEADDR
 #endif
 
-#define AD9528_CS				1
-#define AD9371_CS				2
+#define AD9528_CS				0
+#define AD9371_CS				1
 
 #define DAC_GPIO_PLDDR_BYPASS	GPIO_OFFSET + 60
 #define AD9528_RESET_B			GPIO_OFFSET + 59

@@ -259,7 +259,7 @@ int32_t spi_write_and_read(struct spi_desc *desc,
 			   XSPIPS_CLK_PHASE_1_OPTION : 0));
 
 	XSpiPs_SetSlaveSelect(&desc->instance,
-			      0xf & ~desc->chip_select);
+			      desc->chip_select);
 	XSpiPs_PolledTransfer(&desc->instance,
 			      data, data, bytes_number);
 #else
